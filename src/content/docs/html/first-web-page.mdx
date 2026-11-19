@@ -1,0 +1,85 @@
+---
+title: Your first web page
+---
+import { Steps } from '@astrojs/starlight/components';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { LinkCard } from '@astrojs/starlight/components';
+
+Ok so what the hell is HTML? HTML stands for `Hypertext Markup Language`.
+
+Nevermind what any of that means, to put it simply all HTML is, is the way we tell web browsers how we want our web pages to be structured.
+
+:::note
+HTML was invented in the year 1990 (a mere {new Date().getFullYear() - 1990} years ago). So this means that some one born around that time would've seen the world's first web page and is now witnessing all this super cool AI technology all before their first midlife crisis! Talk about efficiency!
+
+You may read more about HTML [here](https://en.wikipedia.org/wiki/HTML).
+
+You may view the words first web page [here](https://info.cern.ch/hypertext/WWW/TheProject.html).
+:::
+
+###  Your first web page
+<Steps>
+1. Create a new directory/folder called `wdfz`.
+2. Open a text editor.
+    <Tabs>
+        <TabItem label="Windows">Open Notepad</TabItem>
+        <TabItem label="macOS">Open TextEdit</TabItem>
+    </Tabs>
+3. Enter the following:
+    ```html
+    <html>
+        Hello World
+    </html>
+    ```
+4. Save the file in the `wdfz` folder as `index.html`. Take note of the file extension (the stuff after the '.' i.e 'html'), this is very important. Keep the text editor open.
+5. Go to where you saved `index.html` and open it. Keep
+6. A web browser should be opened and you should see something like this
+    ![Elements](../../../assets/hello-world-html.png)
+7. Now open up the inspector like we did in the previous unit. You should see something like this:
+    ```html
+    <html>
+        <head></head>
+        <body>Hello World</body>
+    </html>
+    ```
+    Keep the browser and text editor open.
+</Steps>
+
+How cool is that! You just made your first web page!
+
+If you look at the elements tab in the inspector, its essentially the same as what we saw in the previous unit:
+```html
+<html>
+    <!--a bunch of gibberish-->
+</html>
+```
+and you wrote it all by yourself! Ok so not quite the next Facebook but hey we are just getting started
+
+<Steps>
+8. Now lets go back to the text editor and change `Hello World` to `Goodbye Cruel World`
+
+    ```diff lang="html"
+        <html>
+    -        Hello World
+    +        Goodbye Cruel World
+        </html>
+    ```
+    and save the file. DO NOT REFRESH THE BROWSER! JUST SAVE THE FILE!
+</Steps>
+
+:::caution
+Note that in the code block above, the red highlighted lines with the "-" in the front denote means lines were removed and the green highlighted lines with the "+" in the front means those lines were added. Do not write the "+" and "-" in your files. You will see a lot of these red and green highlighted lines in the future so keep that in mind!
+:::
+<Steps>
+9. After saving your file, go back to the browser. (DO NOT REFRESH THE PAGE). While we changed the `index.html` file. The actual page stayed the same and the HTML in the elements tab is the same as in step 8.
+10. Now please refresh the page. You should finally see `Goodbye Cruel World` on your page and the elements tab should also show the updated HTML.
+</Steps>
+
+The way web browsers work is that once we give the web browser the HTML, it keeps that HTML until we ask it to get new HTML.
+
+Now, I want you to picture yourself as someone who has to write a lot of HTML by hand. If you had to refresh the page every single time you made a change, wouldn't that be extremely annoying? You would have to write a bit, save, switch to the web browser, refresh, check if you were correct, and then go back to the text editor.....geez that sounds horrible. But what if I told you you didn't have to do any of that. What if I told you, you could write HTML and have the result show up INSTANTLY in your web browser without ever leaving your text editor! Luckily for you, we already have that technology. A bunch of developers got really annoyed so they coded it and now its available to you for FREE?!!?!?!? 
+
+We are truly standing on the shoulders of giants (more like a bunch of annoyed developers before you), the technology that beginners have access to in this day and age would put programmers from the 90s to tears if they saw what was available.
+
+
+<LinkCard title="IDE not IED" href="/html/editor" />
