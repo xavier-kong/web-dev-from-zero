@@ -19,7 +19,13 @@ Currently that folder only contains the file index.html.
 Click on index.html to open it.
 It should now look something like this.
 ![VS Code](../../../assets/vscode-1.png)
-Now right of the bat thats a massive improvement from the text editor we used previously. For starters we have a lovely dark theme.
+Now right of the bat thats a massive improvement from the text editor we used previously. For starters we have a lovely dark theme, having a nice dark theme is 90% of coding.
+
+Before we do anything, there is one settings we must enable: 'Auto Save'
+Click on `File` in the top bar then click on `Auto Save` in the menu.
+
+![VS Code](../../../assets/vscode-autosave.png.png)
+
 Ok next lets install an extension.
 Open up the extensions tab
 
@@ -30,4 +36,34 @@ Open up the extensions tab
 
 Next, search for the ["Live Server"](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension by Ritwick Dey. Install it.
 
-auto save
+![VS Code](../../../assets/vscode-liveserver.png.png)
+
+After installation, go back to the editor page. You should see a "Go Live" button at the bottom right of the screen. Don't click it yet!
+
+![VS Code](../../../assets/vscode-2-go-live-button.png)
+
+Let's add a line to the HTML file
+
+```diff lang="html"
+    <html>
++        <head></head>
+         Goodbye Cruel World
+    </html>
+```
+
+Now you may click the "Go Live" button. After a few seconds, a web browser should automatically be opened showing the page we created previously.
+
+Move the web browser to the right and VS code to the left so your screen should look something like this.
+
+![VS Code](../../../assets/vscode-3.png)
+
+Now, for the fun part, lets make a few changes to the HTML file
+
+```diff lang="html"
+    <html>
+         <head></head>
+-         Goodbye Cruel World
++         Hello World
+    </html>
+```
+
