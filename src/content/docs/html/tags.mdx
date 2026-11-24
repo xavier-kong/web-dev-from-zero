@@ -46,10 +46,48 @@ So lets add the following to our `index.html` file:
 ```diff lang="html"
 <html>
      <head></head>
+-    Warning! This train is not stopping!
 +    <b> Warning! This train is not stopping!
 </html>
 
 ```
 
-I added the `<br>` tag before the `Warning!`
+I added the `<b>` tag before the `Warning!` since that's the word we want to make bold. We will go over what the `<b>` tag does later on, for now just follow along.
+
+Let's look at the web page.
+
+![VS Code](../../../assets/tags-bold-wrong.png)
+
+Hmmm...interesting! The entire text is bold, not just the "Warning!" text.
+
+Following our train analogy from above, the web browser does not know when you want to stop, so it just applies the bold styling to all of the text after the `<b>` tag.
+
+Now add a closing `</b>` tag.
+
+```diff lang="html"
+<html>
+     <head></head>
+-    <b> Warning! This train is not stopping!
++    <b> Warning! </b> This train is not stopping!
+</html>
+
+```
+Looks like it's correct now!
+
+![VS Code](../../../assets/tags-bold-correct.png)
+
+We told the browser we want the "bold text train" to stop after the "Warning!" text and it did indeed! I hope this illustrates the importance of closing tags!
+
+### Actually learning about tags now
+
+
+
+
+
+
+
+
+### auto pairs somehow in the future
+
+
 
