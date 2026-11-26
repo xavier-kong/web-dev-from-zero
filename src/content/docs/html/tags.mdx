@@ -106,6 +106,8 @@ So if we wanted our page to have the title: `I need a title`
 
 We would write add `<title>I need a title</title>`
 
+!!! QUIZ
+
 Lets add it to our page.
 
 ```diff lang="html"
@@ -131,4 +133,40 @@ That's weird. Where did our title tag go? Why doesn't it look like the HTML we w
 
 That's interesting the browser has automatically moved our `<title` tag into the `<head>` tag! Not just that, the browser has automatically inserted a `<body` tag for us?????
 
-This is probably a good time for me to introduce another set of tags: `<head` and `<body>`
+This is probably a good time for me to introduce another set of tags: `<head>` and `<body>`
+
+### Head shoulders knees and toes
+
+The `<head>` tag is a container for page metadata and `<body>` tag is a container for page content.
+
+Ok that doesn't really mean anything.
+
+To put it simply, the stuff we want the user to see on the page, is placed between the  `<body>`  `</body>` tags.
+
+And everything that goes on behind the scenes, is placed between `<head>` `</head>`.
+
+But didn't the browser just do everything for me just now? Why do I have to add it myself?
+
+The browser isn't magic (actually it is but not in that sense), it simply reads your HTML and outputs the content based on a set of pre defined rules.
+
+Since our example is super tiny so its quite easy for the browser to guess correctly, but when we have thousands of tags the browser might not be able to guess correctly.
+
+But there's actually a more practical reason for following the HTML rules. 
+
+## NEED AN EXAMPLE OF READING THE HEAD METADATA TO EMBED LOL
+
+Ok so we know its pretty important, but if we had to write all of that before we even start building our site, it would be very annoying. (I think you know where I'm going with this.)
+
+Luckily for us, developers before us have been tortured by this issue as well and have created a shortcut in VS Code for us.
+
+Delete everything in our `index.html`. EVERYTHING!
+
+If we type a single `!` in VS Code. You should see the following:
+
+[emmet autocompelte]
+
+
+
+
+
+
