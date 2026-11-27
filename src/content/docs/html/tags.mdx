@@ -56,7 +56,7 @@ I added the `<b>` tag before the `Warning!` since that's the word we want to mak
 
 Let's look at the web page.
 
-![VS Code](../../../assets/tags-bold-wrong.png)
+![VS Code](./pics/tags-bold-wrong.png)
 
 Hmmm...interesting! The entire text is bold, not just the "Warning!" text.
 
@@ -74,7 +74,7 @@ Now add a closing `</b>` tag.
 ```
 Looks like it's correct now!
 
-![VS Code](../../../assets/tags-bold-correct.png)
+![VS Code](./pics/tags-bold-correct.png)
 
 We told the browser we want the "bold text train" to stop after the "Warning!" text and it did indeed! I hope this illustrates the importance of closing tags!
 
@@ -84,7 +84,7 @@ Simply typing a tag like `<b>` after tying the `>` closing bracket, the correspo
 
 Not only that VS Code automatically suggests tags on typing `<` and a letter!
 
-![VS Code](../../../assets/vscode-suggestions.png)
+![VS Code](./pics/vscode-suggestions.png)
 
 Back in the day, before AI coding, this was considered magic already LOL
 :::
@@ -92,7 +92,7 @@ Back in the day, before AI coding, this was considered magic already LOL
 ### Actually learning about tags now
 So we have a *MAJOR* problem! Looking at our webpage in a web browser, we have a very ugly title.
 
-![VS Code](../../../assets/tags-title-bad.png)
+![VS Code](./pics/tags-title-bad.png)
 
 We cannot consider ourselves serious developers if we do not have a cool title.
 
@@ -121,15 +121,15 @@ Lets add it to our page.
 
 Now our page has a cool title!
 
-![VS Code](../../../assets/tags-title-good.png)
+![VS Code](./pics/tags-title-good.png)
 
 Lets open up the Elements tag in the inspector to check what the browser reads.
 
-![VS Code](../../../assets/tags-title-html.png)
+![VS Code](./pics/tags-title-html.png)
 
 That's weird. Where did our title tag go? Why doesn't it look like the HTML we wrote? Toggle open the `<head>` tag and you should see this.
 
-![VS Code](../../../assets/tags-title-html-expanded.png)
+![VS Code](./pics/tags-title-html-expanded.png)
 
 That's interesting the browser has automatically moved our `<title` tag into the `<head>` tag! Not just that, the browser has automatically inserted a `<body` tag for us?????
 
@@ -163,9 +163,20 @@ Delete everything in our `index.html`. EVERYTHING!
 
 If we type a single `!` in VS Code. You should see the following:
 
-[emmet autocompelte]
+![emmet autocompelte](./pics/vscode-emmet-full.png)
 
+and pressing `Enter` on that selection should give you this:
 
+![emmet autocompelte](./pics/vscode-emmet-result.png)
+
+How cool is that!
+
+## Exercises
+1. Change the title of the page
+
+import { LinkCard } from '@astrojs/starlight/components';
+
+<LinkCard title="More tags!" href="/html/more-tags" />
 
 
 
